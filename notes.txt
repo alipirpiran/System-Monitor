@@ -1,0 +1,6 @@
+1- get system information: cpu, memory, ...
+2- send information throth socket
+3- display result
+
+------
+add config.json file to config information: active metrics, port, url, ...

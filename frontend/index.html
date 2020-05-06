@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Monitor</title>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+
+    <script>
+        var socket = io()
+        socket.on('info', data => {
+            document.getElementById('time').innerHTML = (new Date()).toTimeString().split(' ')[0]
+            let div = document.getElementById('data')
+            div.innerHTML = '';
+            for (const key of Object.keys(data)) {
+                div.innerHTML += `<h2>${key}</h2>`
+                div.innerHTML += `<ul>`
+                for (const [key2, val] of Object.entries(data[key])) {
+                    div.innerHTML += `<li>${key2}: ${val}</li>`
+                }
+                div.innerHTML += `</ul>`
+            }
+        })
+
+    </script>
+</head>
+
+<body>
+    <h1>System Monitroing</h1>
+    <h2>time <span id="time"></span></h2>
+    <div id="data"></div>
+</body>
+
+</html>
