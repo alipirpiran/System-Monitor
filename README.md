@@ -36,4 +36,4 @@ System Monitor, created with Socket.IO, Express, Cron
 ### todos
 - [ ] add authentication
 - [ ] improve frontend, add chart ...
-- [ ] add routes for configing app
+- [ ] add routes for configuring app
