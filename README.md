@@ -15,9 +15,9 @@
  
  System Monitor, created with Socket.IO, Express, Cron
  
-when a client connects to application server, new socket connection oppens, and a cron job start. server sends information of System base on config.js, by default it sends all information every 10 secconds.<br>
-you can config which information you want to get by editing config/config.js<br>
-Server only have one cron job that sends information to all connected clients.if all clients disconnect from server, cron job become destroyed.
+* When a client connects to application server, new socket connection oppens, and a cron job start. server sends information of System base on config.js, by default it sends all information every 10 secconds.<br>
+* You can config which information you want to get by editing config/config.js<br>
+* Server only have one cron job that sends information to all connected clients.if all clients disconnect from server, cron job become destroyed.
 
 
 ## Instalation
