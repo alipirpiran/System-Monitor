@@ -9,7 +9,7 @@
   "author": "Ali Pirpiran",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "node-cron": "^2.0.3",
     "socket.io": "^2.3.0",
     "systeminformation": "^4.24.2"
